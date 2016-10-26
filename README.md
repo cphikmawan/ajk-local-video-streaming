@@ -78,7 +78,7 @@ sudo npm install -g nodemon
 ```
 
 #### FILES REQUIREMENT
-- Clone or Download [Files Requirement](alamatgithub)
+- Clone or Download [Files Requirement](https://github.com/nawakula/TCtreaming)
 
 #### HOW TO USE TCtreaming FOR SERVER
  - Move the files to /usr/local/nginx/html
