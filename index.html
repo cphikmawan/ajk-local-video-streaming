@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+		<title>AJK's Local Video Streaming</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- site styles -->
+        <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+        <!-- Load projekktor css -->
+        <link rel="stylesheet" href="http://projekktor.wlodkowski.net/lib/release/1.3.04/themes/maccaco/projekktor.style.css" type="text/css" media="screen" />
+
+        <!-- Load jquery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+        <!-- load projekktor js -->
+        <script type="text/javascript" src="http://projekktor.wlodkowski.net/lib/release/1.3.04/projekktor-1.3.04.js"></script>  
+        <!-- <style>
+        a {
+            color: red;
+        }
+        img {
+        float: center;
+        margin: 30px 80px 10px 10px;
+        }
+        </style>  --> 
+    </head>
+    
+    
+
+    <body style="font-family:'Oswald', sans-serif;">
+
+        <div class = "container">
+            <center><h1 style="color: white">Local Video Streaming</h1>
+            <h2  style="color: white; margin-bottom: 1.5em;">Arsitektur dan Jaringan Komputer</h2></center>
+            <div  class = "row">
+                <div class = "col-md-7 col-sm-7 col-xs-7">
+                    <div id="player_a" class="projekktor" style="float:left">
+                        <noscript><p>No JavaScript support.</p></noscript>
+                    </div>
+                    <div style="float:left">
+                        <script type="text/javascript">
+                            $(document).ready(function() {
+                                projekktor('#player_a', {
+                                    poster: '/media/intro.jpg',
+                                    title: 'Projekktor - RTMP support',
+                                    playerFlashMP4: 'http://projekktor.wlodkowski.net/lib/release/1.3.09/swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
+                                    playerFlashMP3: 'http://projekktor.wlodkowski.net/lib/release/1.3.09/swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
+                                    width: 640,
+                                    height: 385,
+                                    platforms: ['browser', 'flash', 'vlc'],
+                                    //platforms: ['browser', 'android', 'ios', 'native', 'flash', 'vlc'],
+                                    playlist: [
+                                        {
+                                            0: {src: 'rtmp://10.151.43.73/live/test', streamType:'rtmp', type:'video/flv'},
+                                    
+                                        },
+                                        {
+                                            0: {src: 'rtmp://10.151.43.73/live/test', streamType:'rtmp', type:'video/flv'}
+                                        }
+                                    ]    
+                                }, 
+
+                                function(player) {
+                                    window.p = player;
+                                    p.setDebug(true);
+                                } // on ready 
+                                );
+                                });
+                        </script>
+                    </div>                 
+                </div>
+
+                <div class = "col-md-5 col-sm-5 col-xs-5">
+                    <iframe class= "chat-frame" src="http://10.151.43.73:3000"  scrolling="yes"></iframe>
+                </div>
+
+
+                 <!-- <div class = "intrinsic-kontainer">
+                    <iframe src="http://10.151.43.133:3000" style float:left;" scrolling="yes"></iframe>
+                </div>
+ -->
+
+            </div>
+
+        </div>
+        <center><footer>
+            <p style="margin-top:1em;">
+            <img src="../assets/ajk.jpg" alt="logo" style="width:48px;height:48px; margin: 0px 20px 0px 0px; border-radius: 50%;" 
+            <a href="http://ajk.if.its.ac.id/">Lab Arsitektur dan Jaringan Komputer</a>. Teknik Informatika - Institut Teknologi Sepuluh Nopember</p>
+            </footer></center>
+    </body>
+</html>
+
+

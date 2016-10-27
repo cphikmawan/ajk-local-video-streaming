@@ -1,0 +1,9 @@
+{
+  "author": "DR_Fu",
+  "dependencies": {
+    "express": "^4.10.2"
+  },
+  "description": "TC Chatting Web App",
+  "name": "TChat",
+  "version": "1.0.0"
+}

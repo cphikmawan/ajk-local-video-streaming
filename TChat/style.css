@@ -1,0 +1,51 @@
+* { margin: 0; padding: 0;}
+body { font: 13px Helvetica, Arial; }
+form { background: transparent; padding: 1px; position: fixed; bottom: 0; width: 100%; }
+form input { border: 0; padding-right:0; padding: 10px; width: 89%; margin-right: 0px; display: inline-block}
+form #button { color:#FFF; background: #00B8F5; border: none; padding: 10px 0px;  width: 30%; float: right;display: inline-block; position: absolute;}
+#button { color:#FFF; background: #00B8F5; border: none; padding: 10px; float: right;display: inline-block; position: absolute;}
+#messages { background-color: #F2F2F2; list-style-type: none; margin: 0; padding: 0px 0px 50px; }
+#messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { background: #eee; }
+/*#messages li:nth-child(even) { background: #eee; }*/
+#notifyUser { position: fixed; bottom: 42px; width: 100%; }
+
+/*
+.intrinsic-kontainer {
+position: relative;
+height: 0;
+overflow: hidden;
+}
+
+
+.intrinsic-kontainer-16x9 {
+padding-bottom: 56.25%;
+
+}
+
+
+.intrinsic-kontainer-4x3{
+padding-bottom: 75%
+
+}
+
+.intrinsic-kontainer iframe {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+*/
+/*
+                <div class = "col-md-5">
+                    <iframe src="http://10.151.43.133:3000" style="width:100%; height: 58vh; float:left;" scrolling="yes"></iframe>
+                </div>
+*/
+
+.btn {
+  font-size:0.875em;
+  display:block;
+  left:-60px;
+  margin-top:35px;
+}
